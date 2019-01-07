@@ -6,3 +6,5 @@ This repository aims to automate the tasks needed to deploy OpenFaas (https://ww
 * [Running Docker Enterprise 2.1 on DigitalOcean — Part 1](https://link.medium.com/0XPAOy21ZR)
 * [Running Docker Enterprise 2.1 on DigitalOcean — Part 2](https://link.medium.com/yXqG11xt0R)
 * [Running Docker Enterprise 2.1 on DigitalOcean — Part 3](https://link.medium.com/A7KisfnQ3R)
+
+We will start provisioning the OpenFaas cluster on Digital Ocean and then expanding to other Cloud Providers and on-premises infrastructure. 
