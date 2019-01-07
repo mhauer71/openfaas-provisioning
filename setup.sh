@@ -12,8 +12,11 @@ digital_ocean () {
     do 
         echo "Creating node $prefix-$i"
         docker-machine create --driver digitalocean --digitalocean-image ubuntu-16-04-x64 --digitalocean-access-token $do_token $prefix-$i
-       
+        echo "Configuring Firewall Rules"
+        #node_ip=`docker-machine inspect --format='{{.Driver.IPAddress}}' $prefix-$i`
     done
+    echo "Configuring Firewall"
+    ansible-playbook -i machine.py/machine.py playbook.yml -f $nodes -e 'ansible_python_interpreter=/usr/bin/python3'
     exit
 }
 google_cloud () {

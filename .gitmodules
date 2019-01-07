@@ -1,0 +1,3 @@
+[submodule "machine.py"]
+	path = machine.py
+	url = https://gist.github.com/mhauer71/89f7f72df1c343da6e76492afdd1e617
